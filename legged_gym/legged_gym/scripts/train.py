@@ -41,6 +41,7 @@ import wandb
 
 def train(args):
     args.headless = True
+    args.no_wandb = True
     log_pth = LEGGED_GYM_ROOT_DIR + "/logs/{}/".format(args.proj_name) + args.exptid
     try:
         os.makedirs(log_pth)
